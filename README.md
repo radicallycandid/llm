@@ -1,4 +1,4 @@
-# Projeto: Beabá da OpenAI API
+# Beabá da OpenAI API
 
 Este projeto tem como objetivo ilustrar como usar a API da OpenAI.
 Para isso, usamos dois scripts principais: um para obter capitais de países e outro para resumir arquivos de texto.

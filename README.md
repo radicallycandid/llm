@@ -13,4 +13,4 @@ Para isso, usamos dois scripts principais: um para obter capitais de países e o
 
 Também adicionamos um terceiro script, que responde perguntas em forma de soneto.
 Ele serve para ilustrar o uso da biblioteca `tiny-ai-client`.
-Para instalar essa biblioteca e suas dependências, use algo como `pip install tiny-ai-client pydantic requests asyncio`.
+Para instalar essa biblioteca e suas dependências, use algo como `pip install tiny-ai-client`.

@@ -18,7 +18,7 @@ client = openai.OpenAI()
 
 
 def get_capital(country_name: str) -> str:
-    """Get the capital of a country using GPT-5 Nano.
+    """Get the capital of a country using GPT-4o Mini.
 
     Args:
         country_name: Name of the country
@@ -27,9 +27,9 @@ def get_capital(country_name: str) -> str:
         The capital city name or an error message
     """
     try:
-        # Create a completion using GPT-5 Nano (fastest, most cost-effective)
+        # Create a completion using GPT-4o Mini (fastest, most cost-effective)
         response = client.chat.completions.create(
-            model="gpt-5-nano",  # Most affordable model for simple tasks
+            model="gpt-4o-mini",  # Most affordable model for simple tasks
             messages=[
                 {
                     "role": "system",

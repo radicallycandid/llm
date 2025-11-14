@@ -1,6 +1,6 @@
 # Beabá da OpenAI API
 
-Este projeto demonstra como usar a API da OpenAI através de três exemplos práticos, do básico ao criativo. Todos os scripts usam os modelos mais recentes da série GPT-5 (novembro de 2025).
+Este projeto demonstra como usar a API da OpenAI através de três exemplos práticos, do básico ao criativo. Todos os scripts usam os modelos mais recentes da família GPT-4o (novembro de 2025).
 
 ## 📋 Pré-requisitos
 
@@ -52,7 +52,7 @@ OPENAI_API_KEY=sua_chave_aqui
 
 Demonstra uso básico da API para perguntas factuais.
 
-**Modelo:** `gpt-5-nano` (mais rápido e econômico para tarefas simples)
+**Modelo:** `gpt-4o-mini` (mais rápido e econômico para tarefas simples)
 
 **Execução:**
 ```bash
@@ -71,7 +71,7 @@ Capital: Brasília
 
 Demonstra como resumir arquivos de texto longos em um único parágrafo.
 
-**Modelo:** `gpt-5-mini` (bom equilíbrio entre custo e capacidade)
+**Modelo:** `gpt-4o-mini` (bom equilíbrio entre custo e capacidade)
 
 **Execução:**
 ```bash
@@ -97,7 +97,7 @@ File path: great_work.txt
 
 Demonstra uso criativo da API: respostas sempre em forma de soneto português, no estilo de Camões.
 
-**Modelo:** `gpt-5` (melhor modelo para saída criativa/literária)
+**Modelo:** `gpt-4o` (melhor modelo para saída criativa/literária)
 
 **Execução:**
 ```bash
@@ -119,9 +119,8 @@ python question_answering.py
 
 | Modelo | Uso Recomendado | Custo Relativo | Script que Usa |
 |--------|----------------|---------------|----------------|
-| **gpt-5-nano** | Tarefas simples, factuais | Mais barato | `national_capitals.py` |
-| **gpt-5-mini** | Resumos, classificação | Intermediário | `text_summary.py` |
-| **gpt-5** | Raciocínio complexo, criatividade | Mais caro | `question_answering.py` |
+| **gpt-4o-mini** | Tarefas simples, factuais, resumos | Mais barato | `national_capitals.py`, `text_summary.py` |
+| **gpt-4o** | Raciocínio complexo, criatividade | Mais caro | `question_answering.py` |
 
 ## 🔗 Documentação Oficial
 
@@ -145,8 +144,8 @@ python question_answering.py
 
 ### Otimização de Custos
 
-- Para tarefas factuais simples: use `gpt-5-nano` ou `gpt-5-mini`
-- Para raciocínio complexo: use `gpt-5` ou modelos da série `o-`
+- Para tarefas factuais simples: use `gpt-4o-mini`
+- Para raciocínio complexo: use `gpt-4o` ou modelos da série `o1`
 - Defina `max_tokens` apropriadamente para evitar respostas desnecessariamente longas
 
 ### Ajuste de `temperature`
@@ -209,4 +208,4 @@ Este projeto é de código aberto para fins educacionais.
 ---
 
 **Última atualização:** Novembro 2025
-**Modelos usados:** GPT-5 series (gpt-5, gpt-5-mini, gpt-5-nano)
+**Modelos usados:** GPT-4o series (gpt-4o, gpt-4o-mini)

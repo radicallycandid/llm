@@ -18,7 +18,7 @@ client = openai.OpenAI()
 
 
 def summarize_text(file_path: str) -> str:
-    """Summarize a text file using GPT-5 Mini.
+    """Summarize a text file using GPT-4.1 Mini.
 
     Args:
         file_path: Path to the text file to summarize
@@ -44,7 +44,7 @@ def summarize_text(file_path: str) -> str:
     # Call OpenAI API
     try:
         response = client.chat.completions.create(
-            model="gpt-5-mini",  # Good balance of cost and capability for summarization
+            model="gpt-4.1-mini-2025-04-14",  # Good balance of cost and capability for summarization
             messages=[
                 {
                     "role": "system",
@@ -56,7 +56,7 @@ def summarize_text(file_path: str) -> str:
                 }
             ],
             temperature=0.3,  # Low temperature for consistent, focused summaries
-            max_tokens=500    # Reasonable limit for one-paragraph summaries
+            max_completion_tokens=500    # Reasonable limit for one-paragraph summaries
         )
         return response.choices[0].message.content
 

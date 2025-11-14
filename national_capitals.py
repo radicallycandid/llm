@@ -36,9 +36,7 @@ def get_capital(country_name: str) -> str:
                     "content": "When the user says the name of a country, return its capital city name only. If you don't know, respond with 'I don't know'."
                 },
                 {"role": "user", "content": country_name}
-            ],
-            temperature=0,  # Deterministic output for factual questions
-            max_tokens=20   # Capitals are short - save costs
+            ]
         )
         return response.choices[0].message.content
 

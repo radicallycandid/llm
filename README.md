@@ -71,7 +71,7 @@ Capital: Brasília
 
 Demonstra como resumir arquivos de texto longos em um único parágrafo.
 
-**Modelo:** `gpt-5-mini` (bom equilíbrio entre custo e capacidade)
+**Modelo:** `gpt-4.1-mini` (bom equilíbrio entre custo e capacidade)
 
 **Execução:**
 ```bash
@@ -120,7 +120,7 @@ python question_answering.py
 | Modelo | Uso Recomendado | Script que Usa |
 |--------|----------------|----------------|
 | **gpt-5-nano** | Tarefas simples, factuais | `national_capitals.py` |
-| **gpt-5-mini** | Resumos, classificação | `text_summary.py` |
+| **gpt-4.1-mini** | Resumos, classificação | `text_summary.py` |
 | **gpt-5.1** | Raciocínio complexo, criatividade | `question_answering.py` |
 
 ## 🔗 Documentação Oficial
@@ -145,7 +145,7 @@ python question_answering.py
 ### Escolha do Modelo
 
 - Para tarefas factuais simples: use `gpt-5-nano` (mais rápido)
-- Para resumos e classificação: use `gpt-5-mini` (bom equilíbrio)
+- Para resumos e classificação: use `gpt-4.1-mini` (bom equilíbrio)
 - Para raciocínio complexo e criatividade: use `gpt-5.1`
 - Defina `max_tokens` apropriadamente para evitar respostas desnecessariamente longas
 
@@ -209,4 +209,4 @@ Este projeto é de código aberto para fins educacionais.
 ---
 
 **Última atualização:** Novembro 2025
-**Modelos usados:** GPT-5 series (gpt-5.1, gpt-5-mini, gpt-5-nano)
+**Modelos usados:** gpt-5-nano, gpt-4.1-mini, gpt-5.1

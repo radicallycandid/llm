@@ -42,7 +42,7 @@ def ask_question(question: str) -> str:
                 {"role": "user", "content": question}
             ],
             temperature=0.8,  # Higher temperature for creative, varied responses
-            max_tokens=500    # Sonnets need room for poetic expression
+            max_completion_tokens=500    # Sonnets need room for poetic expression
         )
         return response.choices[0].message.content
 

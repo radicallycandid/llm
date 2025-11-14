@@ -1,6 +1,6 @@
 # Beabá da OpenAI API
 
-Este projeto demonstra como usar a API da OpenAI através de três exemplos práticos, do básico ao criativo. Todos os scripts usam os modelos mais recentes da família GPT-4o (novembro de 2025).
+Este projeto demonstra como usar a API da OpenAI através de três exemplos práticos, do básico ao criativo. Todos os scripts usam os modelos mais recentes da série GPT-5 (lançada em agosto de 2025).
 
 ## 📋 Pré-requisitos
 
@@ -52,7 +52,7 @@ OPENAI_API_KEY=sua_chave_aqui
 
 Demonstra uso básico da API para perguntas factuais.
 
-**Modelo:** `gpt-4o-mini` (mais rápido e econômico para tarefas simples)
+**Modelo:** `gpt-5-nano` (mais rápido e econômico para tarefas simples - $0.05/1M tokens input)
 
 **Execução:**
 ```bash
@@ -71,7 +71,7 @@ Capital: Brasília
 
 Demonstra como resumir arquivos de texto longos em um único parágrafo.
 
-**Modelo:** `gpt-4o-mini` (bom equilíbrio entre custo e capacidade)
+**Modelo:** `gpt-5-mini` (bom equilíbrio entre custo e capacidade - $0.25/1M tokens input)
 
 **Execução:**
 ```bash
@@ -97,7 +97,7 @@ File path: great_work.txt
 
 Demonstra uso criativo da API: respostas sempre em forma de soneto português, no estilo de Camões.
 
-**Modelo:** `gpt-4o` (melhor modelo para saída criativa/literária)
+**Modelo:** `gpt-5` (melhor modelo para saída criativa/literária - $1.25/1M tokens input)
 
 **Execução:**
 ```bash
@@ -117,10 +117,11 @@ python question_answering.py
 
 ## 📊 Comparação de Modelos
 
-| Modelo | Uso Recomendado | Custo Relativo | Script que Usa |
-|--------|----------------|---------------|----------------|
-| **gpt-4o-mini** | Tarefas simples, factuais, resumos | Mais barato | `national_capitals.py`, `text_summary.py` |
-| **gpt-4o** | Raciocínio complexo, criatividade | Mais caro | `question_answering.py` |
+| Modelo | Uso Recomendado | Preço (Input/Output por 1M tokens) | Script que Usa |
+|--------|----------------|-----------------------------------|----------------|
+| **gpt-5-nano** | Tarefas simples, factuais | $0.05 / $0.40 | `national_capitals.py` |
+| **gpt-5-mini** | Resumos, classificação | $0.25 / $2.00 | `text_summary.py` |
+| **gpt-5** | Raciocínio complexo, criatividade | $1.25 / $10.00 | `question_answering.py` |
 
 ## 🔗 Documentação Oficial
 
@@ -144,8 +145,9 @@ python question_answering.py
 
 ### Otimização de Custos
 
-- Para tarefas factuais simples: use `gpt-4o-mini`
-- Para raciocínio complexo: use `gpt-4o` ou modelos da série `o1`
+- Para tarefas factuais simples: use `gpt-5-nano` (mais barato)
+- Para resumos e classificação: use `gpt-5-mini` (bom equilíbrio)
+- Para raciocínio complexo e criatividade: use `gpt-5`
 - Defina `max_tokens` apropriadamente para evitar respostas desnecessariamente longas
 
 ### Ajuste de `temperature`
@@ -208,4 +210,4 @@ Este projeto é de código aberto para fins educacionais.
 ---
 
 **Última atualização:** Novembro 2025
-**Modelos usados:** GPT-4o series (gpt-4o, gpt-4o-mini)
+**Modelos usados:** GPT-5 series (gpt-5, gpt-5-mini, gpt-5-nano)

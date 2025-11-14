@@ -1,6 +1,6 @@
 # Beabá da OpenAI API
 
-Este projeto demonstra como usar a API da OpenAI através de três exemplos práticos, do básico ao criativo. Todos os scripts usam os modelos mais recentes da série GPT-5 (lançada em agosto de 2025).
+Este projeto demonstra como usar a API da OpenAI através de três exemplos práticos, do básico ao criativo. Todos os scripts usam os modelos mais recentes da série GPT-5 (lançada em agosto de 2025), incluindo o GPT-5.1 (lançado em novembro de 2025).
 
 ## 📋 Pré-requisitos
 
@@ -97,7 +97,7 @@ File path: great_work.txt
 
 Demonstra uso criativo da API: respostas sempre em forma de soneto português, no estilo de Camões.
 
-**Modelo:** `gpt-5` (melhor modelo para saída criativa/literária - $1.25/1M tokens input)
+**Modelo:** `gpt-5.1` (melhor modelo para saída criativa/literária - $1.25/1M tokens input)
 
 **Execução:**
 ```bash
@@ -121,7 +121,7 @@ python question_answering.py
 |--------|----------------|-----------------------------------|----------------|
 | **gpt-5-nano** | Tarefas simples, factuais | $0.05 / $0.40 | `national_capitals.py` |
 | **gpt-5-mini** | Resumos, classificação | $0.25 / $2.00 | `text_summary.py` |
-| **gpt-5** | Raciocínio complexo, criatividade | $1.25 / $10.00 | `question_answering.py` |
+| **gpt-5.1** | Raciocínio complexo, criatividade | $1.25 / $10.00 | `question_answering.py` |
 
 ## 🔗 Documentação Oficial
 
@@ -147,7 +147,7 @@ python question_answering.py
 
 - Para tarefas factuais simples: use `gpt-5-nano` (mais barato)
 - Para resumos e classificação: use `gpt-5-mini` (bom equilíbrio)
-- Para raciocínio complexo e criatividade: use `gpt-5`
+- Para raciocínio complexo e criatividade: use `gpt-5.1`
 - Defina `max_tokens` apropriadamente para evitar respostas desnecessariamente longas
 
 ### Ajuste de `temperature`
@@ -210,4 +210,4 @@ Este projeto é de código aberto para fins educacionais.
 ---
 
 **Última atualização:** Novembro 2025
-**Modelos usados:** GPT-5 series (gpt-5, gpt-5-mini, gpt-5-nano)
+**Modelos usados:** GPT-5 series (gpt-5.1, gpt-5-mini, gpt-5-nano)

@@ -52,7 +52,7 @@ OPENAI_API_KEY=sua_chave_aqui
 
 Demonstra uso básico da API para perguntas factuais.
 
-**Modelo:** `gpt-5-nano` (mais rápido e econômico para tarefas simples - $0.05/1M tokens input)
+**Modelo:** `gpt-5-nano` (mais rápido e econômico para tarefas simples)
 
 **Execução:**
 ```bash
@@ -71,7 +71,7 @@ Capital: Brasília
 
 Demonstra como resumir arquivos de texto longos em um único parágrafo.
 
-**Modelo:** `gpt-5-mini` (bom equilíbrio entre custo e capacidade - $0.25/1M tokens input)
+**Modelo:** `gpt-5-mini` (bom equilíbrio entre custo e capacidade)
 
 **Execução:**
 ```bash
@@ -97,7 +97,7 @@ File path: great_work.txt
 
 Demonstra uso criativo da API: respostas sempre em forma de soneto português, no estilo de Camões.
 
-**Modelo:** `gpt-5.1` (melhor modelo para saída criativa/literária - $1.25/1M tokens input)
+**Modelo:** `gpt-5.1` (melhor modelo para saída criativa/literária)
 
 **Execução:**
 ```bash
@@ -117,11 +117,11 @@ python question_answering.py
 
 ## 📊 Comparação de Modelos
 
-| Modelo | Uso Recomendado | Preço (Input/Output por 1M tokens) | Script que Usa |
-|--------|----------------|-----------------------------------|----------------|
-| **gpt-5-nano** | Tarefas simples, factuais | $0.05 / $0.40 | `national_capitals.py` |
-| **gpt-5-mini** | Resumos, classificação | $0.25 / $2.00 | `text_summary.py` |
-| **gpt-5.1** | Raciocínio complexo, criatividade | $1.25 / $10.00 | `question_answering.py` |
+| Modelo | Uso Recomendado | Script que Usa |
+|--------|----------------|----------------|
+| **gpt-5-nano** | Tarefas simples, factuais | `national_capitals.py` |
+| **gpt-5-mini** | Resumos, classificação | `text_summary.py` |
+| **gpt-5.1** | Raciocínio complexo, criatividade | `question_answering.py` |
 
 ## 🔗 Documentação Oficial
 
@@ -130,22 +130,21 @@ python question_answering.py
 - **Guia de Chat:** [Chat Guide](https://platform.openai.com/docs/guides/chat-completions)
 - **Modelos Disponíveis:** [Models Documentation](https://platform.openai.com/docs/models)
 - **Melhores Práticas:** [Best Practices](https://platform.openai.com/docs/guides/prompt-engineering)
-- **Preços:** [Pricing](https://openai.com/api/pricing/)
 
 ## 🛡️ Segurança e Melhores Práticas
 
 1. **Nunca exponha sua API key** - Use variáveis de ambiente
 2. **Use `.gitignore`** - Já incluído para proteger `.env`
 3. **Defina limites de uso** - Configure billing limits no dashboard da OpenAI
-4. **Escolha o modelo certo** - Use modelos menores quando possível para economizar
+4. **Escolha o modelo certo** - Use modelos menores quando possível
 5. **Ajuste `temperature`** - Use 0 para respostas determinísticas, 0.7-1.0 para criatividade
-6. **Defina `max_tokens`** - Limite o tamanho das respostas para controlar custos
+6. **Defina `max_tokens`** - Limite o tamanho das respostas
 
 ## 💡 Dicas
 
-### Otimização de Custos
+### Escolha do Modelo
 
-- Para tarefas factuais simples: use `gpt-5-nano` (mais barato)
+- Para tarefas factuais simples: use `gpt-5-nano` (mais rápido)
 - Para resumos e classificação: use `gpt-5-mini` (bom equilíbrio)
 - Para raciocínio complexo e criatividade: use `gpt-5.1`
 - Defina `max_tokens` apropriadamente para evitar respostas desnecessariamente longas

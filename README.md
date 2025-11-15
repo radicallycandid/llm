@@ -1,6 +1,6 @@
 # Beabá da OpenAI API
 
-Este projeto demonstra como usar a API da OpenAI através de três exemplos práticos, do básico ao criativo. Todos os scripts usam os modelos mais recentes da série GPT-5 (lançada em agosto de 2025), incluindo o GPT-5.1 (lançado em novembro de 2025).
+Este projeto demonstra como usar a API da OpenAI através de três exemplos práticos, do básico ao criativo. Todos os scripts usam os modelos da série GPT-5 (lançada em agosto de 2025).
 
 ## 📋 Pré-requisitos
 
@@ -71,7 +71,7 @@ Capital: Brasília
 
 Demonstra como resumir arquivos de texto longos em um único parágrafo.
 
-**Modelo:** `gpt-4.1-mini` (bom equilíbrio entre custo e capacidade)
+**Modelo:** `gpt-5-mini` (bom equilíbrio entre custo e capacidade)
 
 **Execução:**
 ```bash
@@ -97,7 +97,7 @@ File path: great_work.txt
 
 Demonstra uso criativo da API: respostas sempre em forma de soneto português, no estilo de Camões.
 
-**Modelo:** `gpt-5.1` (melhor modelo para saída criativa/literária)
+**Modelo:** `gpt-5` (modelo flagship para saída criativa/literária)
 
 **Execução:**
 ```bash
@@ -120,8 +120,8 @@ python question_answering.py
 | Modelo | Uso Recomendado | Script que Usa |
 |--------|----------------|----------------|
 | **gpt-5-nano** | Tarefas simples, factuais | `national_capitals.py` |
-| **gpt-4.1-mini** | Resumos, classificação | `text_summary.py` |
-| **gpt-5.1** | Raciocínio complexo, criatividade | `question_answering.py` |
+| **gpt-5-mini** | Resumos, classificação | `text_summary.py` |
+| **gpt-5** | Raciocínio complexo, criatividade | `question_answering.py` |
 
 ## 🔗 Documentação Oficial
 
@@ -145,8 +145,8 @@ python question_answering.py
 ### Escolha do Modelo
 
 - Para tarefas factuais simples: use `gpt-5-nano` (mais rápido)
-- Para resumos e classificação: use `gpt-4.1-mini` (bom equilíbrio)
-- Para raciocínio complexo e criatividade: use `gpt-5.1`
+- Para resumos e classificação: use `gpt-5-mini` (bom equilíbrio)
+- Para raciocínio complexo e criatividade: use `gpt-5`
 - Defina `max_tokens` apropriadamente para evitar respostas desnecessariamente longas
 
 ### Ajuste de `temperature`
@@ -209,4 +209,4 @@ Este projeto é de código aberto para fins educacionais.
 ---
 
 **Última atualização:** Novembro 2025
-**Modelos usados:** gpt-5-nano, gpt-4.1-mini, gpt-5.1
+**Modelos usados:** gpt-5-nano, gpt-5-mini, gpt-5

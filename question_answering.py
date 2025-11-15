@@ -36,7 +36,7 @@ def ask_question(question: str) -> str:
     """
     try:
         response = client.chat.completions.create(
-            model="gpt-5.1",  # GPT-5.1 for best creative/literary output
+            model="gpt-5",  # GPT-5 flagship model for best creative/literary output
             messages=[
                 {"role": "system", "content": SONNET_SYSTEM_PROMPT},
                 {"role": "user", "content": question}

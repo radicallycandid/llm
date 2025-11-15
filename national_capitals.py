@@ -29,7 +29,7 @@ def get_capital(country_name: str) -> str:
     try:
         # Create a completion using GPT-5 Nano (fastest, most cost-effective)
         response = client.chat.completions.create(
-            model="gpt-5-nano",  # Most affordable model for simple tasks
+            model="gpt-5-nano",  # Lightweight model optimized for speed and cost
             messages=[
                 {
                     "role": "system",

@@ -6,7 +6,7 @@ Este projeto demonstra como usar a API da OpenAI através de três exemplos prá
 
 - Python 3.9 ou superior
 - Chave de API da OpenAI ([obtenha aqui](https://platform.openai.com/api-keys))
-- Biblioteca `openai` versão 1.54.0 ou superior
+- Biblioteca `openai` versão 2.8.0 ou superior
 
 ## 🚀 Instalação
 

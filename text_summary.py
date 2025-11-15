@@ -37,7 +37,7 @@ def summarize_text(file_path: str) -> str:
     except Exception as e:
         return f"❌ File error: {e}"
 
-    # Check if file is too large (GPT-5 has token limits)
+    # Check if file is too large (model has token limits)
     if len(content) > 100000:  # Rough character limit
         return "❌ File is too large. Please use a smaller file (< 100KB)."
 
